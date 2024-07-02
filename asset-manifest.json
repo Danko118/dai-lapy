@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dai-lapy/static/css/main.27544a40.css",
+    "main.js": "/dai-lapy/static/js/main.431133b0.js",
+    "static/media/point.svg": "/dai-lapy/static/media/point.491ac4a29dcf38aeb20b5102c1e1c816.svg",
+    "static/media/paw.svg": "/dai-lapy/static/media/paw.5cc41a18e8ac42ee1aaf6a1badbd2f74.svg",
+    "index.html": "/dai-lapy/index.html",
+    "main.27544a40.css.map": "/dai-lapy/static/css/main.27544a40.css.map",
+    "main.431133b0.js.map": "/dai-lapy/static/js/main.431133b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27544a40.css",
+    "static/js/main.431133b0.js"
+  ]
+}
