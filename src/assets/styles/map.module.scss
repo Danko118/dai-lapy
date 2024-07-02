@@ -1,0 +1,75 @@
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.map {
+    aspect-ratio: 16/9;
+    width: 50%;
+    background: #FFD177;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+.points {
+    width: 50%;
+    aspect-ratio: 16/9;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.point {
+    display: flex;
+    gap: 15px;
+}
+
+.icon img{
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, .2));
+}
+
+.info {
+    font-size: 36px;
+}
+.name {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: bold;
+}
+.adress {
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.tel {
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .info {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .points {
+        aspect-ratio: 0;
+        height: fit-content;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .map {
+        width: 100%;
+    }
+    .points {
+        width: 100%;
+    }
+}
