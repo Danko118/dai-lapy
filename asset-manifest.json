@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dai-lapy/static/css/main.d41f129f.css",
+    "main.css": "/dai-lapy/static/css/main.57aa920e.css",
     "main.js": "/dai-lapy/static/js/main.48a6c132.js",
     "static/media/paw.svg": "/dai-lapy/static/media/paw.421b146813047353c6808850cfec4b47.svg",
     "static/media/WhatsApp.svg": "/dai-lapy/static/media/WhatsApp.6181e5cecd1a682846ba3e623621a869.svg",
@@ -8,11 +8,11 @@
     "static/media/tg.svg": "/dai-lapy/static/media/tg.462441d6892f0fa1b8bd0a988fea5e87.svg",
     "index.html": "/dai-lapy/index.html",
     "static/media/vk.svg": "/dai-lapy/static/media/vk.273da4f71f3a0b5d543d730f8ef8c70b.svg",
-    "main.d41f129f.css.map": "/dai-lapy/static/css/main.d41f129f.css.map",
+    "main.57aa920e.css.map": "/dai-lapy/static/css/main.57aa920e.css.map",
     "main.48a6c132.js.map": "/dai-lapy/static/js/main.48a6c132.js.map"
   },
   "entrypoints": [
-    "static/css/main.d41f129f.css",
+    "static/css/main.57aa920e.css",
     "static/js/main.48a6c132.js"
   ]
 }
