@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/dai-lapy/static/css/main.27544a40.css",
-    "main.js": "/dai-lapy/static/js/main.431133b0.js",
+    "main.css": "/dai-lapy/static/css/main.d41f129f.css",
+    "main.js": "/dai-lapy/static/js/main.a91f436d.js",
+    "static/media/paw.svg": "/dai-lapy/static/media/paw.421b146813047353c6808850cfec4b47.svg",
+    "static/media/WhatsApp.svg": "/dai-lapy/static/media/WhatsApp.6181e5cecd1a682846ba3e623621a869.svg",
     "static/media/point.svg": "/dai-lapy/static/media/point.491ac4a29dcf38aeb20b5102c1e1c816.svg",
-    "static/media/paw.svg": "/dai-lapy/static/media/paw.5cc41a18e8ac42ee1aaf6a1badbd2f74.svg",
+    "static/media/tg.svg": "/dai-lapy/static/media/tg.462441d6892f0fa1b8bd0a988fea5e87.svg",
     "index.html": "/dai-lapy/index.html",
-    "main.27544a40.css.map": "/dai-lapy/static/css/main.27544a40.css.map",
-    "main.431133b0.js.map": "/dai-lapy/static/js/main.431133b0.js.map"
+    "static/media/vk.svg": "/dai-lapy/static/media/vk.273da4f71f3a0b5d543d730f8ef8c70b.svg",
+    "main.d41f129f.css.map": "/dai-lapy/static/css/main.d41f129f.css.map",
+    "main.a91f436d.js.map": "/dai-lapy/static/js/main.a91f436d.js.map"
   },
   "entrypoints": [
-    "static/css/main.27544a40.css",
-    "static/js/main.431133b0.js"
+    "static/css/main.d41f129f.css",
+    "static/js/main.a91f436d.js"
   ]
 }
