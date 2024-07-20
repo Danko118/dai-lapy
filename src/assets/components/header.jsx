@@ -12,7 +12,9 @@ const UiHeader = ({
 
     useEffect(() => {
         // setMenu(false)
-        setTargets(pages[location["pathname"].replace("/","")]["pages"])
+        (location)?
+        setTargets(pages[location["pathname"].replace("/","")]["pages"]):
+        setTargets([])
     },[location])
 
     return (
