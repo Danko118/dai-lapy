@@ -30,7 +30,7 @@ function App() {
         second={false}
       />
       <Routes>
-        <Route path="/dai-lapy/" index element={
+        <Route path="/" index element={
           <>
             <UiAbout
               styles={["primary"]}

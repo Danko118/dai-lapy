@@ -17,7 +17,7 @@ export default {
         pages: [
             {
                 title:"Главная",
-                link:"/dai-lapy"
+                link:"/"
             },
             {
                 title:"Обо мне",
