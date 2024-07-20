@@ -7,26 +7,51 @@ import UiRules from "./assets/components/rules";
 import UiPricing from "./assets/components/pricing";
 import UiMap from "./assets/components/map";
 import UiFooter from "./assets/components/footer";
+import UiChoose from "./assets/components/choose";
+import { Route, Routes } from "react-router-dom";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 10); // Adjust delay if needed
+  }, [location]);
+
   return (
     <div className={Style.app}>
-      <UiHeader />
+      <UiHeader
+        location={location}
+      />
       <MainPage 
         second={false}
       />
-      <UiAbout
-        second={false}
-      />
-      <UiNeedo
-        second={true}
-      />
-      <UiRules
-        second={false}
-      />
-      <UiPricing
-        second={true}
-      />
+      <Routes>
+        <Route path="/dai-lapy/" index element={
+          <>
+            <UiAbout
+              styles={["primary"]}
+            />
+            <UiChoose />
+          </>
+        }/>
+        <Route path="/hostel" element={
+          <>
+            <UiNeedo
+              styles={["secondary" , "green"]}
+            />
+            <UiRules
+              styles={["primary"]}
+            />
+            <UiPricing
+              styles={["secondary" , "green"]}
+            />
+          </>
+        }/>
+      </Routes>
       <UiMap
         second={false}
       />

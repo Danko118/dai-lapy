@@ -1,10 +1,11 @@
 .section {
     width: 100%;
     min-height: 600px;
+    
 }
 
 .wrapper {
-    width: 1620px;  
+    width: 1280px;  
     height: 100%;
     margin: 40px auto;
     display: flex;
@@ -15,13 +16,14 @@
 }
 
 .title {
+    width: 100%;
     font-size: 62px;
     font-weight: bold;
         font-family: "Montserrat Alternates", sans-serif;
-    text-align: center;
-    &::after,&::before {
-        content: ' • ';
-    }
+    text-align: left;
+    // &::after,&::before {
+    //     content: ' • ';
+    // }
 }
 
 .primary {
@@ -29,22 +31,29 @@
     color: #1d1d1d !important;
 }
 
-.secondary {
-    background: #4286F5 !important;
+.green {    
     color: #f5f5f5 !important;
+    background: #34A853 !important;
+    background: #34A853 radial-gradient(circle  at bottom left, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.36) 25%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, rgba(255,255,255,0.1) 75%, rgba(255,255,255,0.1) 90%, rgba(255,255,255,0) 100%) !important;
+}
+
+.secondary {
+    width: 90% !important;
+    margin: 0 auto !important;
+    border-radius: 25px !important;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, .2);
 }
 @media screen and (max-width: 1620px) {
     .wrapper {
-        width: 1260px;
+        width: 1080px;
     }
 }
 @media screen and (max-width: 1280px) {
     .wrapper {
-        width: 920px;
+        width: 780px;
     }
     .title {
-        font-size: 54px;
+        font-size: 50px;
     }
 }
 @media screen and (max-width: 920px) {
@@ -53,6 +62,10 @@
         padding: 0 20px;
     }
     .title {
+        text-align: center;
         font-size: 32px;
+    }
+    .secondary {
+        width: calc(100% - 40px) !important;
     }
 }

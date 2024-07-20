@@ -2,6 +2,7 @@ import React from 'react';
 import Style from '../styles/map.module.scss'
 import SectionStyle from '../styles/section.module.scss'
 import Point from '../images/point.svg'
+import { FaPhoneAlt } from "react-icons/fa";
 
 const UiMap = ({
   second
@@ -16,9 +17,8 @@ const UiMap = ({
             <div className={Style.point}>
               <div className={Style.icon}><img src={Point} alt="Метка на карте" /></div>
               <div className={Style.info}>
-                <div className={Style.name}>Наша точка:</div>
-                <adress className={Style.adress}>Адресс</adress>
-                <div className={Style.tel}>+7 (999) 99-99-99</div>
+                <address className={Style.adress}>Адрес</address>
+                <a href='tel://+79999999999' className={Style.tel}><FaPhoneAlt /> +7 (999) 99-99-99</a>
               </div>
             </div>
           </div>

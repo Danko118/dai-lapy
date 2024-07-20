@@ -1,13 +1,11 @@
 .bg {
-    background-color: #6FA1F2;
-    background-image:  url("../images/paws.png");
-    background-blend-mode: soft-light;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, .2);
+    // background: #34A853 radial-gradient(circle  at bottom left, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.36) 25%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, rgba(255,255,255,0.1) 75%, rgba(255,255,255,0.1) 90%, rgba(255,255,255,0) 100%) !important;
+    // box-shadow: inset 0 0 10px rgba(0, 0, 0, .2);
 }
 
 .welcome {
-    color: #f5f5f5;
-    text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    color: #1c1c1c;
+    // text-shadow: 0 0 5px rgba(0, 0, 0, .2);
     width: 100%;
     text-align: center;
     font-weight: 900;
@@ -20,20 +18,24 @@
 }
 
 .button {
-    background: #4286F5;
+    background: #34A853;
     font-size: 30px;
     max-width: 400px;
     padding: 10px 20px;
     transition: 0.2s all cubic-bezier(0.215, 0.610, 0.355, 1);
     font-family: "Montserrat Alternates", sans-serif;
     border: 3px solid #f5f5f5;
-    border-radius: 15px;
+    border-radius: 30px;
     font-weight: normal;
     &:hover {
         background: #f5f5f5;
-        border: 3px solid #4286F5;
-        color: #4286F5;
+        border: 3px solid #34A853;
+        color: #34A853;
     }
+}
+
+.place {
+    color: #34A853;
 }
 
 .buttons {

@@ -1,0 +1,93 @@
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;   
+}
+
+.green {
+    & .circle {
+        background: #34A853;
+    }
+    &:hover {
+        background: #34A853;
+        color: #fff;
+    }
+}
+
+.blue {
+    & .circle {
+        background: #4286f5;
+    }
+    &:hover {
+        background: #4286f5;
+        color: #fff;
+    }
+}
+
+.circle {
+    width: 90%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    & svg {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+.name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card {
+    width: 45%;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s all linear;
+    gap: 15px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
+    border-radius: 15px;    
+}
+
+// @media screen and (max-width: 1280px) {
+// }
+@media screen and (max-width: 720px) {
+
+    .content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .card {
+        width: 100%;
+        gap: 30px;
+        flex-direction: row;
+    }
+    .text {
+        flex-direction: column;
+    }
+    .green {
+        flex-direction: row-reverse !important;
+    }
+}

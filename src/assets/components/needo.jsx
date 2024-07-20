@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Style from '../styles/needo.module.scss'
 import SectionStyle from '../styles/section.module.scss'
+import { IoSearchOutline } from "react-icons/io5";
+import util from '../../util';
 
 const UiNeedo = ({
-  second
+  styles
 }) => {
+
   return (
-    <section className={[SectionStyle.section,(second)? SectionStyle.secondary : SectionStyle.primary].join(" ")}>
+    <section className={[SectionStyle.section, styles.map(style => util[style]).join(" ")].join(" ")}>
       <div className={SectionStyle.wrapper}>
         <h1 className={SectionStyle.title}>Что нужно для заселения?</h1>
         <ul className={Style.list}>
@@ -32,7 +35,7 @@ const UiNeedo = ({
                 </div>
             </li>
         </ul>
-        <button className={Style.button}>Узнать больше</button>
+        <button className={Style.button}>Узнать больше <IoSearchOutline /></button>
       </div>
     </section>
   );

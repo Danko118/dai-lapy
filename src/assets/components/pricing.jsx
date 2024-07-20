@@ -1,19 +1,22 @@
 import React from 'react';
 import Style from '../styles/pricing.module.scss'
 import SectionStyle from '../styles/section.module.scss'
-
+import { FaPaw } from "react-icons/fa6";
+import util from '../../util';
 
 const UiPricing = ({
-  second
+  styles
 }) => {
+
   return (
-    <section className={[SectionStyle.section,(second)? SectionStyle.secondary : SectionStyle.primary].join(" ")}>
+    <section className={[SectionStyle.section, styles.map(style => util[style]).join(" ")].join(" ")}>
       <div className={SectionStyle.wrapper}>
-        <h1 className={SectionStyle.title}>Стоимость</h1>
+        <h1 className={SectionStyle.title}>Уютный уголок</h1>
         <div className={Style.content}>
             <div className={Style.image}></div>
             <div className={Style.info}>
                 <div className={Style.specs}>
+                    Размеры комнаты
                     <div className={Style.item}><div className={Style.name}>Площадь</div><div className={Style.measure}>9м²</div></div>
                     <div className={Style.item}>Высота<span>0.9м</span></div>
                     <div className={Style.item}>Глубина<span>1м</span></div>
@@ -34,7 +37,7 @@ const UiPricing = ({
                 </div>
             </div>
         </div>
-        <button className={Style.button}>Забронировать</button>
+        <button className={Style.button}>Забронировать <FaPaw /></button>
       </div>
     </section>
   );

@@ -1,20 +1,19 @@
 .content {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    gap: 80px;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .map {
-    aspect-ratio: 16/9;
-    width: 50%;
+    aspect-ratio: 21/9;
+    width: 100%;
     background: #FFD177;
     border-radius: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, .2);
 }
 .points {
     width: 50%;
-    aspect-ratio: 16/9;
     display: flex;
     flex-direction: column;
     gap: 120px;

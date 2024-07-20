@@ -1,12 +1,15 @@
 import React from 'react';
 import Style from '../styles/about.module.scss'
 import SectionStyle from '../styles/section.module.scss'
+import { IoSearchOutline } from "react-icons/io5";
+import util from '../../util';
 
 const UiAbout = ({
-  second
+  styles
 }) => {
+
   return (
-    <section className={[SectionStyle.section,(second)? SectionStyle.secondary : SectionStyle.primary].join(" ")}>
+    <section className={[SectionStyle.section, styles.map(style => util[style]).join(" ")].join(" ")} id='about'>
       <div className={SectionStyle.wrapper}>
         <h1 className={SectionStyle.title}>Обо мне</h1>
         <div className={Style.content}>
@@ -32,7 +35,7 @@ const UiAbout = ({
                         </div>
                     </div>
                 </div>
-                <button className={Style.button}>Узнать больше</button>
+                <button className={Style.button}>Узнать больше <IoSearchOutline /></button>
             </div>
         </div>
       </div>

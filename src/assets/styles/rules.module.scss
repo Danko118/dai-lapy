@@ -1,25 +1,35 @@
 .item {
+    background: #34A853 !important;
+    background: #34A853 radial-gradient(circle  at bottom right, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.36) 25%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, rgba(255,255,255,0.1) 75%, rgba(255,255,255,0.1) 90%, rgba(255,255,255,0) 100%) !important;
     display: flex;
+    padding: 40px;
+    border-radius: 15px;
     flex-direction: row;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, .1);
     justify-content: space-between;
     align-items: center;
+    color: #fff;
     gap: 50px;
     &:hover .image {
         transform: scale(1);
     }
 }
 
-.second {
-    flex-direction: row-reverse;
-    text-align: right;
+.text {
+    width: 100%;
 }
 
-.text {
-    width: 50%;
+.content {
+    display: flex;
+    gap: 50px;
 }
 
 .head {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     height: fit-content;
     margin-bottom: 25px;
     font-family: "Montserrat Alternates", sans-serif;
@@ -31,40 +41,12 @@
     width: 100%;
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 32px;
-}
-
-.image {
-    min-width: 550px;
-    max-width: 550px;
-    min-height: 550px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 550px;
-    background: #4286F5;
-    border-radius: 50%;
-    box-shadow: inset 0 0 10px 7px rgba(0, 0, 0, .1);
-    transform: scale(0.8);
-    transition: 0.4s all cubic-bezier(0.215, 0.610, 0.355, 1);
-    & img,& svg {
-        color: white;
-        width: 80%;
-        height: 80%;
-    }
+    text-align: justify;
 }
 
 @media screen and (max-width: 1280px) {
-    .item {
+    .content {
         flex-direction: column;
-        text-align: center;
-    }
-    .image {
-        min-width: 300px;
-        max-width: 300px;
-        min-height: 300px;
-        max-height: 300px;
-        background: #4286F5;
-        border-radius: 50%;
     }
 }
 @media screen and (max-width: 920px) {
@@ -73,11 +55,5 @@
     }
     .body {
         font-size: 24px;
-    }
-    .text {
-        width: 100%;
-    }
-    .image {
-        transform: scale(1);
     }
 }
