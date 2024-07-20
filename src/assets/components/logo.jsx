@@ -15,7 +15,7 @@ const UiLogo = ({
     setName("")
   },[location])
   return (
-    <Link className={Style.logo} to={"/dai-lapy"}>
+    <Link className={Style.logo} to={"/"}>
       <img src={Logo} />
       <span className={Style.cross}></span>
       <div className={Style.text}>

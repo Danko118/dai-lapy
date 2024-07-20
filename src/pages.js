@@ -1,5 +1,5 @@
 export default {
-    "dai-lapy" : {
+    "" : {
         name: "Главная страница",
         pages: [
             {
