@@ -7,13 +7,16 @@ import tg from "../images/tg.svg";
 import wa from "../images/WhatsApp.svg";
 
 
-const UiFooter = () => {
+const UiFooter = ({ location }) => {
+    
     return (
         <footer id='footer'>
             <div className={SectionStyle.wrapper}>
                 <div className={Style.content}>
                     <div className={Style.brand}>
-                        <UiLogo />  
+                        <UiLogo 
+                            location={location}
+                        />  
                         {/* <div className={Style.social}>
                             <li><img src={vk} alt="Vk logo" /></li>
                             <li><img src={tg} alt="Tg logo" /></li>

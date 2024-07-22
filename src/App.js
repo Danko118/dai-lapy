@@ -55,7 +55,9 @@ function App() {
       <UiMap
         second={false}
       />
-      <UiFooter/>
+      <UiFooter
+        location={location}
+        />
     </div>
   );
 }
